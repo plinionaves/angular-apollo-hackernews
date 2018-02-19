@@ -5,4 +5,29 @@ type Link @model {
 
   description: String!
   url: String!
+  postedById: User @relation(name: "UsersLinks")
+  votes: [Vote!]! @relation(name: "VotesOnLink")
 }
+
+
+type User @model {
+  id: ID! @isUnique # read-only (managed by Graphcool)
+
+  createdAt: DateTime! # read-only (managed by Graphcool)
+  updatedAt: DateTime! # read-only (managed by Graphcool)
+
+  name: String!
+  email: String! @isUnique
+  password: String!
+  links: [Link!]! @relation(name: "UsersLinks")
+  votes: [Vote!]! @relation(name: "UsersVotes")
+}
+
+
+type Vote @model {
+  id: ID! @isUnique
+  user: User! @relation(name: "UsersVotes")
+  link: Link! @relation(name: "VotesOnLink")
+}
+
+
