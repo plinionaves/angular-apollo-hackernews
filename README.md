@@ -1,6 +1,17 @@
-# AngularApolloHackernews
+# Angular Apollo Hackernews
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
+
+## Used Technologies
+
+- [Angular (5)](https://angular.io/)
+- [Apollo Client](https://www.apollographql.com/client/)
+- [GraphQL](http://graphql.org/)
+- [GraphCool](https://www.graph.cool/)
+
+## Link for deployed app
+
+Visit: [Angular Apollo Hackernews on surge.sh](http://angular-apollo-hackernews.surge.sh/search)
 
 ## Development server
 
