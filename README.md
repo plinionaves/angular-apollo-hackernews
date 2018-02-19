@@ -11,7 +11,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Link for deployed app
 
-Visit: [Angular Apollo Hackernews on surge.sh](http://angular-apollo-hackernews.surge.sh/search)
+Visit: [Angular Apollo Hackernews on surge.sh](http://angular-apollo-hackernews.surge.sh/)
 
 ## Development server
 
